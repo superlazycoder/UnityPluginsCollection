@@ -1,0 +1,259 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58354D2717C7C52A00DA259C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58354D2617C7C52A00DA259C /* Foundation.framework */; };
+		58354D2C17C7C52A00DA259C /* OSHook.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 58354D2B17C7C52A00DA259C /* OSHook.h */; };
+		58354D2E17C7C52A00DA259C /* OSHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 58354D2D17C7C52A00DA259C /* OSHook.m */; };
+		58354D3617C7C55700DA259C /* HookBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58354D3417C7C55700DA259C /* HookBridge.mm */; };
+		58354D3717C7CA2700DA259C /* HookBridge.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 58354D3517C7C55700DA259C /* HookBridge.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58354D2117C7C52A00DA259C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				58354D2C17C7C52A00DA259C /* OSHook.h in CopyFiles */,
+				58354D3717C7CA2700DA259C /* HookBridge.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		58354D2317C7C52A00DA259C /* libOSHook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOSHook.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		58354D2617C7C52A00DA259C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		58354D2A17C7C52A00DA259C /* OSHook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OSHook-Prefix.pch"; sourceTree = "<group>"; };
+		58354D2B17C7C52A00DA259C /* OSHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSHook.h; sourceTree = "<group>"; };
+		58354D2D17C7C52A00DA259C /* OSHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSHook.m; sourceTree = "<group>"; };
+		58354D3417C7C55700DA259C /* HookBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HookBridge.mm; sourceTree = "<group>"; };
+		58354D3517C7C55700DA259C /* HookBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HookBridge.h; sourceTree = "<group>"; };
+		58354D3917CBD36A00DA259C /* UnityBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityBridge.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58354D2017C7C52A00DA259C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58354D2717C7C52A00DA259C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58354D1A17C7C52A00DA259C = {
+			isa = PBXGroup;
+			children = (
+				58354D2817C7C52A00DA259C /* OSHook */,
+				58354D2517C7C52A00DA259C /* Frameworks */,
+				58354D2417C7C52A00DA259C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58354D2417C7C52A00DA259C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58354D2317C7C52A00DA259C /* libOSHook.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58354D2517C7C52A00DA259C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58354D2617C7C52A00DA259C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58354D2817C7C52A00DA259C /* OSHook */ = {
+			isa = PBXGroup;
+			children = (
+				58354D2B17C7C52A00DA259C /* OSHook.h */,
+				58354D2D17C7C52A00DA259C /* OSHook.m */,
+				58354D2917C7C52A00DA259C /* Supporting Files */,
+				58354D3417C7C55700DA259C /* HookBridge.mm */,
+				58354D3517C7C55700DA259C /* HookBridge.h */,
+				58354D3917CBD36A00DA259C /* UnityBridge.h */,
+			);
+			path = OSHook;
+			sourceTree = "<group>";
+		};
+		58354D2917C7C52A00DA259C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58354D2A17C7C52A00DA259C /* OSHook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58354D2217C7C52A00DA259C /* OSHook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58354D3117C7C52A00DA259C /* Build configuration list for PBXNativeTarget "OSHook" */;
+			buildPhases = (
+				58354D1F17C7C52A00DA259C /* Sources */,
+				58354D2017C7C52A00DA259C /* Frameworks */,
+				58354D2117C7C52A00DA259C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSHook;
+			productName = OSHook;
+			productReference = 58354D2317C7C52A00DA259C /* libOSHook.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58354D1B17C7C52A00DA259C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "LoKi Systems";
+			};
+			buildConfigurationList = 58354D1E17C7C52A00DA259C /* Build configuration list for PBXProject "OSHook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58354D1A17C7C52A00DA259C;
+			productRefGroup = 58354D2417C7C52A00DA259C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58354D2217C7C52A00DA259C /* OSHook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58354D1F17C7C52A00DA259C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58354D2E17C7C52A00DA259C /* OSHook.m in Sources */,
+				58354D3617C7C55700DA259C /* HookBridge.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58354D2F17C7C52A00DA259C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58354D3017C7C52A00DA259C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58354D3217C7C52A00DA259C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/OSHook.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSHook/OSHook-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		58354D3317C7C52A00DA259C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/OSHook.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSHook/OSHook-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58354D1E17C7C52A00DA259C /* Build configuration list for PBXProject "OSHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58354D2F17C7C52A00DA259C /* Debug */,
+				58354D3017C7C52A00DA259C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58354D3117C7C52A00DA259C /* Build configuration list for PBXNativeTarget "OSHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58354D3217C7C52A00DA259C /* Debug */,
+				58354D3317C7C52A00DA259C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58354D1B17C7C52A00DA259C /* Project object */;
+}
